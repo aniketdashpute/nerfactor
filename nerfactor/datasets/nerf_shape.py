@@ -1,3 +1,10 @@
+'''
+AD Comments:
+1. Main data loader file
+2. --Need to read more to understand what each function does
+'''
+
+
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
