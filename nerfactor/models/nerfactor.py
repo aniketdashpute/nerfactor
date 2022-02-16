@@ -1,3 +1,15 @@
+'''
+AD Comments:
+1. NeRFactor model is specified in this file
+2. Has functions for:
+- rendering,
+- evaluating BRDF/albedo,
+- making batches of rays for rendering,
+- computing loss,
+- compile output into video/webpage
+'''
+
+
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
