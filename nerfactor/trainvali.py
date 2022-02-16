@@ -1,3 +1,13 @@
+'''
+AD Comments:
+1. This function is used for training/validation of the network
+2. Tensorflow/keras is used
+3. main() function does all the stuff, most of the code is assigning variable
+values from the config files
+4. The main training/validation is done using these functions:
+distributed_train_step, distributed_vali_step
+'''
+
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
