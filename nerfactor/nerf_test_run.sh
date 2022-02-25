@@ -25,7 +25,8 @@ fi
 gpu="$1"
 shift # shift the remaining arguments
 
-CUDA_VISIBLE_DEVICES="$gpu" \
+TF_GPU_THREAD_MODE='gpu_private' \
+    CUDA_VISIBLE_DEVICES="$gpu" \
     PYTHONPATH="$REPO_DIR" \
     python "$REPO_DIR"/nerfactor/nerf_test.py \
     "$@"
