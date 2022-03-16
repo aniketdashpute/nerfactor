@@ -40,7 +40,7 @@ def main(_):
     # Load and resize images
     img_dir = join(FLAGS.scene_dir, 'images')
     img_paths = xm.os.sortglob(
-        img_dir, filename='*', ext='jpg', ext_ignore_case=True)
+        img_dir, filename='*', ext='JPG', ext_ignore_case=True)
     assert img_paths, "No image globbed"
     if FLAGS.debug:
         img_paths = img_paths[:4]

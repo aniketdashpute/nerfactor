@@ -22,9 +22,17 @@ if [ $# -lt 1 ]; then
     echo "Usage: $0 gpu[ ...]"
     exit 1
 fi
+
+echo "--YOYOYOYOYOYOYO" $0
+echo "--YOYOYOYOYOYOYO" $1
+echo "--YOYOYOYOYOYOYO" $2
+
 gpu="$1"
 shift # shift the remaining arguments
 
+echo "YOYOYOYOYOYOYO" $gpu
+
+#TF_GPU_THREAD_MODE='gpu_private' \
 CUDA_VISIBLE_DEVICES="$gpu" \
     PYTHONPATH="$REPO_DIR" \
     python "$REPO_DIR"/nerfactor/explore_brdf_space.py \

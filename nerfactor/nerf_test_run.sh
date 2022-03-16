@@ -25,6 +25,10 @@ fi
 gpu="$1"
 shift # shift the remaining arguments
 
+echo "YOYOYOYOYOYOYOYOYYOYO"
+echo "---------------------"
+echo $gpu
+
 TF_GPU_THREAD_MODE='gpu_private' \
     CUDA_VISIBLE_DEVICES="$gpu" \
     PYTHONPATH="$REPO_DIR" \
